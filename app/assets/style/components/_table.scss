@@ -1,0 +1,23 @@
+.table {
+  color: $table-color;
+  background-color: $table-bg;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  th{
+    font-weight: $table-th-font-weight;
+  }
+  tr{
+    border-bottom: 1px solid $table-striped-bg;
+  }
+  td {
+    text-align: center;
+    padding: $table-cell-padding-y $table-cell-padding-x;
+  }
+  tbody td{
+    &:hover {
+    background-color: $table-hover-bg;
+    color: $table-hover-color;
+    }
+  }
+}

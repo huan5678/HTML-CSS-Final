@@ -1,0 +1,15 @@
+.hero {
+  height: 24rem;
+  @include media-breakpoint-up(md){
+    height: 35rem;
+  }
+  &__index{
+    background-image: url('../images/bg_index.png');
+  }
+  &__course{
+    background-image: url('../images/bg_course.png');
+  }
+  &__faq{
+    background-image: url('../images/bg_QA.png');
+  }
+}
