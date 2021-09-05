@@ -1,10 +1,39 @@
----
-title: 六角學院
-layout: ./app/layout.ejs
-engine: ejs
-current: course
----
-<section class="hero hero__course bg-cover bg-center bg-no-repeat mb-6.5">
+
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>六角學院</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+            <link rel="stylesheet" href="./assets/style/all.css">
+            </head>
+
+            <body>
+              <header class="pos-sticky bg-gray bg-opacity-50 w-100 top-0 z-100">
+                <nav class="d-flex flex-wrap justify-between items-center container">
+                  <h2 class="logo">
+                    <a href="#">六角學院</a>
+                  </h2>
+                  <button id="nav-btn" class="btn d-md-none"><i class="fas fa-bars fs-1 text-white"></i></button>
+                  <ul id="nav-list" class="list-none d-none d-md-flex flex-column flex-md-row justify-md-between items-md-center w-100 w-md-auto g-2">
+                    <li class="link  p-2.5">
+                      <a class="link__block fs-  link-white " href="index.html">首頁</a>
+                    </li>
+                    <li class="link  link--active  p-2.5">
+                      <a class="link__block  link-primary " href="course.html">課程</a>
+                    </li>
+                    <li class="link  p-2.5">
+                      <a class="link__block  link-white " href="faq.html">問答</a>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+
+              <main class="pos-absolute top-0 w-100">
+                <section class="hero hero__course bg-cover bg-center bg-no-repeat mb-6.5">
   <div class="container h-100">
     <div class="row items-center h-100">
       <div class="col-md-6">
@@ -87,3 +116,27 @@ current: course
     </div>
   </div>
 </section>
+              </main>
+
+              <footer class="text-left bg-black py-4.5">
+                <div class="d-flex justify-between items-center container">
+                  <div>
+                    <h2 class="logo bg-no-repeat">
+                      <a href="#">六角學院</a>
+                    </h2>
+                    <p class="text-gray text-center">© 2018 hexschool</p>
+                  </div>
+                  <ul class="d-flex list-none g-3">
+                    <li class="link__icon"><a href="#"><img src="./assets/images/fb.png" alt="fb" /></a></li>
+                    <li class="link__icon"><a href="#"><img src="./assets/images/tw.png" alt="twitter" /></a></li>
+                    <li class="link__icon"><a href="#"><img src="./assets/images/ig.png" alt="ig" /></a></li>
+                  </ul>
+                </div>
+
+              </footer>
+
+              <script src="./assets/js/vendors.js"></script>
+              <script src="./assets/js/all.js"></script>
+            </body>
+
+          </html>
