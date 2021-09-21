@@ -1,51 +1,129 @@
-
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>六角學院</title>
+    <meta
+      content=" 打破影音課程售後不理，我們在線上等著你。 "
+      name="description"
+    />
+    <meta
+      content="線上課程, 網頁設計, 前端, HTML, CSS, jQuery, javascript"
+      name="keywords"
+    />
+    <meta content="六角學院" name="author" />
+    <link rel="canonical" href="https://www.hexschool.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
-    <head>
-      <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>六角學院</title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-            <link rel="stylesheet" href="./assets/style/all.css">
-            </head>
+  <body>
+    <header class="pos-fixed bg-gray bg-opacity-50 w-100 top-0 z-100">
+      <nav class="d-flex flex-wrap justify-between items-center container">
+        <h2 class="logo">
+          <a href="#" class="d-block">六角學院</a>
+        </h2>
+        <button id="nav-btn" class="btn d-md-none">
+          <i class="fas fa-bars fs-1 text-white"></i>
+        </button>
+        <ul
+          id="nav-list"
+          class="
+            list-none
+            d-md-flex
+            flex-column flex-md-row
+            justify-md-between
+            items-md-center
+            w-100 w-md-auto
+            g-2
+            py-2.5
+          "
+        >
+          <li
+            class="
+              mb-4 mb-md-0
+              link
+              
+            "
+          >
+            <a
+              class="
+                p-2.5
+                link__block
+                
+                link-white
+                
+              "
+              href="index.html"
+            >
+              首頁
+            </a>
+          </li>
+          <li
+            class="
+              mb-4 mb-md-0
+              link
+              
+              link--active
+              
+            "
+          >
+            <a
+              class="
+                p-2.5
+                link__block
+                
+                link-primary
+                
+              "
+              href="course.html"
+            >
+              課程
+            </a>
+          </li>
+          <li class="link ">
+            <a
+              class="
+                p-2.5
+                link__block
+                
+                link-white
+                
+              "
+              href="faq.html"
+            >
+              問答
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-            <body>
-              <header class="pos-sticky bg-gray bg-opacity-50 w-100 top-0 z-100">
-                <nav class="d-flex flex-wrap justify-between items-center container">
-                  <h2 class="logo">
-                    <a href="#">六角學院</a>
-                  </h2>
-                  <button id="nav-btn" class="btn d-md-none"><i class="fas fa-bars fs-1 text-white"></i></button>
-                  <ul id="nav-list" class="list-none d-none d-md-flex flex-column flex-md-row justify-md-between items-md-center w-100 w-md-auto g-2">
-                    <li class="link  p-2.5">
-                      <a class="link__block fs-  link-white " href="index.html">首頁</a>
-                    </li>
-                    <li class="link  link--active  p-2.5">
-                      <a class="link__block  link-primary " href="course.html">課程</a>
-                    </li>
-                    <li class="link  p-2.5">
-                      <a class="link__block  link-white " href="faq.html">問答</a>
-                    </li>
-                  </ul>
-                </nav>
-              </header>
-
-              <main class="pos-absolute top-0 w-100">
-                <section class="hero hero__course bg-cover bg-center bg-no-repeat mb-6.5">
+    <main>
+<section class="hero hero__course bg-cover bg-center bg-no-repeat mb-6.5">
   <div class="container h-100">
     <div class="row items-center h-100">
       <div class="col-md-6">
         <h1 class="fs-3 fs-md-2 fs-lg-1 text-white fw-regular lh-lg mb-6">
-          <p>HTML、CSS 開發網站<br><span class="text-primary fs-5 fs-md-4">從無到有學會網頁設計</span></p>
+          HTML、CSS 開發網站<br /><span class="text-primary fs-5 fs-md-4"
+            >從無到有學會網頁設計</span
+          >
         </h1>
-        <a href="" class="btn btn-primary text-white py-0.75 px-2 py-md-1.5 px-md-4">現在上課去<i class="fas fa-arrow-right ps-4"></i></a>
+        <a
+          href=""
+          class="btn btn-primary text-white py-0.75 px-2 py-md-1.5 px-md-4"
+          >現在上課去<i class="fas fa-arrow-right ps-4"></i
+        ></a>
       </div>
       <div class="d-none d-md-block col-md-6 h-55">
         <div class="d-flex justify-end items-start">
-          <img src="./assets/images/html.png" alt="">
-          <img src="./assets/images/CSS.png" alt="">
+          <img src="./assets/images/html.png" alt="HTML" />
+          <img src="./assets/images/CSS.png" alt="CSS" />
         </div>
       </div>
     </div>
@@ -55,9 +133,19 @@
 <section class="container mb-4">
   <div class="row items-center mb-6">
     <div class="col-8 mb-2 mb-md-0">
-      <div class="d-flex flex-column flex-md-row justify-md-center items-center g-4.5">
-        <img src="./assets/images/teacher.png" class="rounded-circle" alt="">
-        <h2 class="fs-md-2 text-primary">廖洧杰<br><span class="text-black">老師</span></h2>
+      <div
+        class="
+          d-flex
+          flex-column flex-md-row
+          justify-md-center
+          items-center
+          g-4.5
+        "
+      >
+        <img src="./assets/images/teacher.png" class="rounded-circle" alt="" />
+        <h2 class="fs-md-2 text-primary">
+          廖洧杰<br /><span class="text-black">老師</span>
+        </h2>
       </div>
     </div>
     <div class="col-4">
@@ -71,17 +159,23 @@
     </div>
   </div>
   <div>
-    <div class="d-flex justify-lg-center items-end mb-3">
+    <div class="d-flex w-lg-60 mx-auto items-end mb-3">
       <div class="d-flex flex-column flex-md-row items-md-end">
-        <h2 class="text-primary fw-regular fs-3 fs-md-2 mb-1 mb-md-0">這堂課程有什麼特別的？</h2>
+        <h2 class="text-primary fw-regular fs-3 fs-md-2 mb-1 mb-md-0">
+          這堂課程有什麼特別的？
+        </h2>
         <span class="ps-md-2 text-secondary fs-5">六角課程的四大優點</span>
       </div>
     </div>
     <div class="d-flex justify-center">
-      <ol class="text-black list-decimal w-lg-65">
+      <ol class="text-black list-decimal w-lg-60">
         <li>有能力排出具專業、語意化、美觀的網頁設計</li>
-        <li>課程結束後，會提供給你一個完整的網頁設計稿，當你實作出網頁後，就可以轉交六角學院的講師們進行程式碼審視，以確保你吸收的網頁排版觀念是正確的。</li>
-        <li>了解設計網頁的脈絡，你隨時可以在社群裡發問問題，我們永遠都會在這裡！</li>
+        <li>
+          課程結束後，會提供給你一個完整的網頁設計稿，當你實作出網頁後，就可以轉交六角學院的講師們進行程式碼審視，以確保你吸收的網頁排版觀念是正確的。
+        </li>
+        <li>
+          了解設計網頁的脈絡，你隨時可以在社群裡發問問題，我們永遠都會在這裡！
+        </li>
         <li>獲得持續更新的講義教材，終身複習不會脫離趨勢的現代化線上課程。</li>
       </ol>
     </div>
@@ -90,7 +184,9 @@
 <section class="container mb-7.5">
   <div class="d-flex w-lg-60 mx-auto items-end mb-3">
     <div class="d-flex flex-column flex-md-row items-md-end">
-      <h2 class="text-primary fw-regular fs-3 fs-md-2 mb-1 mb-md-0">課程大綱</h2>
+      <h2 class="text-primary fw-regular fs-3 fs-md-2 mb-1 mb-md-0">
+        課程大綱
+      </h2>
       <span class="ps-md-2 text-secondary fs-5">最扎實的學習內容編排</span>
     </div>
   </div>
@@ -110,33 +206,51 @@
 </section>
 <section class="bg-light py-6 py-md-xl">
   <div class="container">
-    <div class="d-flex flex-column flex-md-row g-md-8 justify-center items-md-end">
-      <h2 class="text-black fs-3 fw-regular lh-lg mb-3 mb-md-0">心動不如馬上行動！<br>現在就成為我們的學生吧</h2>
-      <a href="" class="btn btn-primary text-white py-0.75 px-2 py-md-1.5 px-md-4">馬上去註冊<i class="fas fa-arrow-right ps-4"></i></a>
+    <div
+      class="d-flex flex-column flex-md-row g-md-8 justify-center items-md-end"
+    >
+      <h2 class="text-black fs-3 fw-regular lh-lg mb-3 mb-md-0">
+        心動不如馬上行動！<br />現在就成為我們的學生吧
+      </h2>
+      <a
+        href=""
+        class="btn btn-primary text-white py-0.75 px-2 py-md-1.5 px-md-4"
+        >馬上去註冊<i class="fas fa-arrow-right ps-4"></i
+      ></a>
     </div>
   </div>
 </section>
-              </main>
+</main>
 
-              <footer class="text-left bg-black py-4.5">
-                <div class="d-flex justify-between items-center container">
-                  <div>
-                    <h2 class="logo bg-no-repeat">
-                      <a href="#">六角學院</a>
-                    </h2>
-                    <p class="text-gray text-center">© 2018 hexschool</p>
-                  </div>
-                  <ul class="d-flex list-none g-3">
-                    <li class="link__icon"><a href="#"><img src="./assets/images/fb.png" alt="fb" /></a></li>
-                    <li class="link__icon"><a href="#"><img src="./assets/images/tw.png" alt="twitter" /></a></li>
-                    <li class="link__icon"><a href="#"><img src="./assets/images/ig.png" alt="ig" /></a></li>
-                  </ul>
-                </div>
+    <footer class="bg-black py-4.5">
+      <div class="d-flex justify-between items-center container">
+        <div>
+          <h2 class="logo bg-no-repeat">
+            <a href="#">六角學院</a>
+          </h2>
+          <p class="text-gray text-center">© 2018 hexschool</p>
+        </div>
+        <ul class="d-flex list-none g-3">
+          <li class="link__icon">
+            <a href="#" class="d-block">
+              <img src="./assets/images/fb.png" alt="fb" />
+            </a>
+          </li>
+          <li class="link__icon">
+            <a href="#" class="d-block">
+              <img src="./assets/images/tw.png" alt="twitter" />
+            </a>
+          </li>
+          <li class="link__icon">
+            <a href="#" class="d-block">
+              <img src="./assets/images/ig.png" alt="ig" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-              </footer>
-
-              <script src="./assets/js/vendors.js"></script>
-              <script src="./assets/js/all.js"></script>
-            </body>
-
-          </html>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
