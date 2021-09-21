@@ -1,60 +1,184 @@
-
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <meta
+      content=" 打破影音課程售後不理，我們在線上等著你。 "
+      name="description"
+    />
+    <meta
+      content="線上課程, 網頁設計, 前端, HTML, CSS, jQuery, javascript"
+      name="keywords"
+    />
+    <meta content="六角學院" name="author" />
+    <link rel="canonical" href="https://www.hexschool.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
-    <head>
-      <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title><%- title %></title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-            <link rel="stylesheet" href="./assets/style/all.css">
-            </head>
+  <body>
+    <header class="pos-fixed bg-gray bg-opacity-50 w-100 top-0 z-100">
+      <nav class="d-flex flex-wrap justify-between items-center container">
+        <h2 class="logo">
+          <a href="#" class="d-block">六角學院</a>
+        </h2>
+        <button id="nav-btn" class="btn d-md-none">
+          <i class="fas fa-bars fs-1 text-white"></i>
+        </button>
+        <ul
+          id="nav-list"
+          class="
+            list-none
+            d-md-flex
+            flex-column flex-md-row
+            justify-md-between
+            items-md-center
+            w-100 w-md-auto
+            g-2
+            py-2.5
+          "
+        >
+          <li
+            class="
+              mb-4 mb-md-0
+              link
+              <%
+              if(current
+              ===
+              'index'
+              ){%>
+              link--active
+              <%
+              }
+              %>
+            "
+          >
+            <a
+              class="
+                p-2.5
+                link__block
+                <%
+                if(current
+                ===
+                'index'
+                ){%>
+                link-primary
+                <%
+                }
+                else
+                {%>
+                link-white
+                <%}
+                %>
+              "
+              href="index.html"
+            >
+              首頁
+            </a>
+          </li>
+          <li
+            class="
+              mb-4 mb-md-0
+              link
+              <%
+              if(current
+              ===
+              'course'
+              ){%>
+              link--active
+              <%
+              }
+              %>
+            "
+          >
+            <a
+              class="
+                p-2.5
+                link__block
+                <%
+                if(current
+                ===
+                'course'
+                ){%>
+                link-primary
+                <%
+                }
+                else
+                {%>
+                link-white
+                <%}
+                %>
+              "
+              href="course.html"
+            >
+              課程
+            </a>
+          </li>
+          <li class="link <% if(current === 'faq' ){%> link--active <% } %>">
+            <a
+              class="
+                p-2.5
+                link__block
+                <%
+                if(current
+                ===
+                'faq'
+                ){%>
+                link-primary
+                <%
+                }
+                else
+                {%>
+                link-white
+                <%}
+                %>
+              "
+              href="faq.html"
+            >
+              問答
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-            <body>
-              <header class="pos-sticky bg-gray bg-opacity-50 w-100 top-0 z-100">
-                <nav class="d-flex flex-wrap justify-between items-center container">
-                  <h2 class="logo">
-                    <a href="#">六角學院</a>
-                  </h2>
-                  <button id="nav-btn" class="btn d-md-none"><i class="fas fa-bars fs-1 text-white"></i></button>
-                  <ul id="nav-list" class="list-none d-none d-md-flex flex-column flex-md-row justify-md-between items-md-center w-100 w-md-auto g-2">
-                    <li class="link <% if(current === 'index' ){%> link--active <% } %> p-2.5">
-                      <a class="link__block fs- <% if(current === 'index' ){%> link-primary <% } else {%> link-white <%} %>" href="index.html">首頁</a>
-                    </li>
-                    <li class="link <% if(current === 'course' ){%> link--active <% } %> p-2.5">
-                      <a class="link__block <% if(current === 'course' ){%> link-primary <% } else {%> link-white <%} %>" href="course.html">課程</a>
-                    </li>
-                    <li class="link <% if(current === 'faq' ){%> link--active <% } %> p-2.5">
-                      <a class="link__block <% if(current === 'faq' ){%> link-primary <% } else {%> link-white <%} %>" href="faq.html">問答</a>
-                    </li>
-                  </ul>
-                </nav>
-              </header>
+    <main><%- contents %></main>
 
-              <main class="pos-absolute top-0 w-100">
-                <%- contents %>
-              </main>
+    <footer class="bg-black py-4.5">
+      <div class="d-flex justify-between items-center container">
+        <div>
+          <h2 class="logo bg-no-repeat">
+            <a href="#">六角學院</a>
+          </h2>
+          <p class="text-gray text-center">© 2018 hexschool</p>
+        </div>
+        <ul class="d-flex list-none g-3">
+          <li class="link__icon">
+            <a href="#" class="d-block">
+              <img src="./assets/images/fb.png" alt="fb" />
+            </a>
+          </li>
+          <li class="link__icon">
+            <a href="#" class="d-block">
+              <img src="./assets/images/tw.png" alt="twitter" />
+            </a>
+          </li>
+          <li class="link__icon">
+            <a href="#" class="d-block">
+              <img src="./assets/images/ig.png" alt="ig" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-              <footer class="text-left bg-black py-4.5">
-                <div class="d-flex justify-between items-center container">
-                  <div>
-                    <h2 class="logo bg-no-repeat">
-                      <a href="#">六角學院</a>
-                    </h2>
-                    <p class="text-gray text-center">© 2018 hexschool</p>
-                  </div>
-                  <ul class="d-flex list-none g-3">
-                    <li class="link__icon"><a href="#"><img src="./assets/images/fb.png" alt="fb" /></a></li>
-                    <li class="link__icon"><a href="#"><img src="./assets/images/tw.png" alt="twitter" /></a></li>
-                    <li class="link__icon"><a href="#"><img src="./assets/images/ig.png" alt="ig" /></a></li>
-                  </ul>
-                </div>
-
-              </footer>
-
-              <script src="./assets/js/vendors.js"></script>
-              <script src="./assets/js/all.js"></script>
-            </body>
-
-          </html>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
